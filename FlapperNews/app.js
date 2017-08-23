@@ -27,3 +27,10 @@ function($scope){
       post.upvotes += 1;
   }
 }]);
+
+app.factory('posts', [function(){
+    var o = {
+        posts: []
+    };
+    return o;
+}]);
